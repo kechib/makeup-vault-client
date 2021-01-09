@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>The Makeup Review</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <div class="container">
+      <div class="background">
+      <p id="message"></p>
+      <h1>The Makeup Vault</h1>
+      <div class="wrapper">
+      <div class="start">
+            <form id="sign-up" form class="form">
+              <input class="form-control"
+              placeholder="Email"
+              name="credentials[email]"
+              type="text">
+              <input class="form-control"
+              placeholder="password"
+              name="credentials[password]"
+              type="password">
+              <input class="form-control"
+              placeholder="confirm password"
+              name="credentials[password_confirmation]"
+              type="password"  />
+               <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            </form>
+
+            <form id="sign-in" form class="form">
+              <input class="form-control"
+              placeholder="Email"
+              name="credentials[email]"
+              type="text" />
+              <input class="form-control"
+          placeholder="password"
+          name="credentials[password]"
+          type="password" />
+        <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
+        </form>
+        </div>
+      </div>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+</div>
+      <div class="step2">
+            <form id="change-password">
+              <input class="form-control"
+          placeholder="old password"
+          name="passwords[old]"
+          type="password"/>
+          <input class="form-control"
+          placeholder="new password"
+          name="passwords[new]"
+          type="password"/>
+          <button type="submit" class="btn btn-primary btn-lg">New Password</button>
+        </form>
+        </div>
+
+
+        <div class="step3">
+
+          <form id="sign-out">
+          <button  class="btn btn-primary btn-lg">Sign Out</button>
+          </form>
+      </div>
+
+      <div class="review1">
+    <form id="create-a-review">
+
+    <div>Add Review To The Vault</div>
+    <div>Title<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_2" name="review[title]" class="form-control"/>
+    </div>
+    <div>Product Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_5" name="review[product]" rows="3" class="form-control"/>
+    </div>
+    <div>Company Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_6" name="review[company]" rows="3" class="form-control"/>
+    </div>
+    <div>Description<span style="color: red;"> *</span><br/>
+    <textarea id="data_7" name="review[description]" class="form-control"></textarea>
+    </div>
+    <div>Rate this product<span style="color: red;"> *</span><br/>
+    <select id="data_4" name="review[rating]" class="form-control"><option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    </select>
+    </div>
+    <div>Would you recommend this product?<span style="color: red;"> *</span><br/>
+    <span><input type="radio" id="data_9_0" name="review[recommend]" value="Yes"/> Yes</span><br/>
+    <span><input type="radio" id="data_9_1" name="review[recommend]" value="No"/> No</span><br/>
+    <span><input type="radio" id="data_9_2" name="review[recommend]" value="I am not sure"/> I am not sure</span><br/>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Post It!</button>
+    </form>
+
+    <p id="review-display"></p>
+    <form id="get-reviews">
+  <button type="submit" class="btn btn-primary btn-lg">Open the Vault</button>
+  </form>
+  <p id="review-display"></p>
+    <form id="get-one-review">
+
+    <input class="form-control"
+    type="text"
+    name="review[_id]"
+    placeholder="ID Get One Review"
+    />
+    <button type="submit" class="btn btn-primary btn-lg">Open Vault[One]</button>
+</form>
+    <form id="delete-review">
+      <input class="form-control"
+      type="text"
+      name="review[_id]"
+      placeholder="Put ID Here To Delete Review"
+      />
+  <button type="submit" class="btn btn-primary btn-lg">Delete Your Review</button>
+  </form>
+  <form id="update-review">
+    <input class="form-control"
+    type="text"
+    name="review[_id]"
+    placeholder="Put ID Here To Edit Review"
+    />
+    <div>New Title<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_2" name="review[title]" class="form-control"/>
+    </div>
+    <div>Product Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_5" name="review[product]" rows="3" class="form-control"/>
+    </div>
+    <div>Company Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_6" name="review[company]" rows="3" class="form-control"/>
+    </div>
+    <div>Description<span style="color: red;"> *</span><br/>
+    <textarea id="data_7" name="review[description]" class="form-control"></textarea>
+    </div>
+    <div>Rate this product<span style="color: red;"> *</span><br/>
+    <select id="data_4" name="review[rating]" class="form-control"><option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    </select>
+    </div>
+    <div>Would you recommend this product?<span style="color: red;"> *</span><br/>
+    <span><input type="radio" id="data_9_0" name="review[recommend]" value="Yes"/> Yes</span><br/>
+    <span><input type="radio" id="data_9_1" name="review[recommend]" value="No"/> No</span><br/>
+    <span><input type="radio" id="data_9_2" name="review[recommend]" value="I am not sure"/> I am not sure</span><br/>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Update Your Review</button>
+  </form>
+  </div>
+          </body>
+    </html>
