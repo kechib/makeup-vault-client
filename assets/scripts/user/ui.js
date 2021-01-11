@@ -11,11 +11,13 @@ const onSignUpFailure = function (error) {
 }
 
 const onSignInSuccess = function (response) {
-  $('.review1').show()
+  $('.background').hide()
+  $('#carouselExampleIndicators').show()
+    $('#menu').show()
+  // $('.review1').show()
 $('.start').hide()
-$('.step3').show()
-$('.step2').show()
   $('form').trigger('reset')
+  $('#hide-modal').show()
   store.user = response.user
   $('#message').text('Sign In Successful! Hello '+ response.user.email + ' ! Here is your owner id! '+ response.user.token)
 

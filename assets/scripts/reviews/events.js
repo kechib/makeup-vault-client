@@ -53,6 +53,12 @@ const onUpdateReview = function (event) {
   .catch(ui.onUpdateReviewFailure)
 }
 
+// const updateModal = function (event) {
+//
+// }
+const getCarousel = function (event) {
+  ('#update-review').show()
+}
 module.exports = {
   onCreateReview,
   onGetReviews,
