@@ -18,7 +18,9 @@ const onSignInSuccess = function (response) {
 $('.start').hide()
 $('.page-content').show()
 $('.header-content').hide()
+$('.end').hide()
 $('.container-fluid').hide()
+$('.end').show()
   $('form').trigger('reset')
   $('#hide-modal').show()
   store.user = response.user
@@ -47,7 +49,10 @@ const onSignOutSuccess = function () {
   $('.start').show()
     $('.background').show()
     $('#carouselExampleIndicators').hide()
+    $('.page-content').hide()
+    $('.header-content').hide()
       $('#menu').hide()
+      $('.end').hide()
   $('form').trigger('reset')
 }
 

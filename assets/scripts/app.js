@@ -14,6 +14,7 @@ $(() => {
   $('#carouselExampleIndicators').hide()
   $('#menu').hide()
   $('.review1').hide()
+  $('.end').hide()
 $('.start').show()
 $('.header-content').show()
 $('.page-content').hide()

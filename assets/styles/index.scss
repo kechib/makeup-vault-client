@@ -327,6 +327,8 @@ background-repeat: no-repeat;
 }
 #navbarToggleExternalContent {
   max-height: 100px;
+  margin: 25px;
+  padding-left: 50px;
 
 }
 .container-fluid {
@@ -442,8 +444,8 @@ ul {
      }
    }
 .navbar.navbar-light {
-  position: relative;
-align-content: center;
+  display: flex;
+align-content: row;
 
 }
 .pos-f-t {
@@ -509,6 +511,16 @@ align-content: center;
   }
 }
 
+}
+#get-one-review {
+  position: relative;
+  top: -55px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* Animate Background*/
 @keyframes Gradient {
