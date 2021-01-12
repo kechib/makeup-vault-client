@@ -19,7 +19,7 @@
 <div class="pos-f-t">
   <ul>
   <div class="collapse" id="navbarToggleExternalContent">
-    <div class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="navbar navbar-light" style="background-color: linear-gradient(132deg, #FC415A, #53e3a6);">
       <h4 class="text-white">Manage Your Account</h4>
       <span class="text-muted">Manage Your Reviews</span>
 
@@ -68,7 +68,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-light" style="background-color: rgba(0,0,0,0.0);">
+  <nav class="navbar navbar-light" style="background-color: linear-gradient(132deg, #FC415A, #53e3a6);">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -85,20 +85,45 @@
   </form>
 </li>
 </ul>
-  </nav>
+</nav>
 </div>
 
 </header>
+<div class="container-fluid">
+<!-- Background animtion-->
+    <div class="cubeDesign">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+<!-- header <header>-->
+</div>
+
+
 <marquee behavior="scroll" direction="right"><p id="message"></p></marquee>
 <marquee behavior="scroll" direction="right"><p id="review-display"></p></marquee>
       <!-- <div class="container"> -->
+      <!-- title & content -->
+            <section>
+              <div class="header-content">
+               <h1>Welcome To The Makeup Vault</h1>
+               <p>Come unlock your makeup reviews! It'll be our secret</p>
+            </div>
+            <div class="page-content">
+              <h1>Give Us Your Reviews Here At The Makeup Vault</h1>
+             <p> Write reviews for your favorite makeup brands,<br> What do you have to say? We'd love to hear it! <br>
+               Reviewing high quality products helps the beauty community all around you.</p>
+            </div>
+            </section>
       <div class="background">
      <div class="wrapper">
       <h1>The Makeup Vault</h1>
 
       <div class="start">
-            <form id="sign-up" form class="form">
-              <h3><
+            <form id="sign-up" class="form">
+              <h3>Sign Up</h3>
               <input class="form-control"
               placeholder="Email"
               name="credentials[email]"
@@ -114,7 +139,8 @@
                <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
             </form>
 
-            <form id="sign-in" form class="form">
+            <form id="sign-in" class="form">
+              <h3>Sign In</h3>
               <input class="form-control"
               placeholder="Email"
               name="credentials[email]"
@@ -181,28 +207,27 @@
             <!-- <div class="modal-header"> -->
   <div id="myModal1">
         <div class="modal-body">
-          <h3>Edit Your Review</h3>
-
-
           <form id="update-review">
+            <h3>Edit Your Review</h3>
             <input class="form-control"
             type="text"
             name="review[_id]"
             placeholder="Put ID Here To Edit Review"
             />
-            <div>New Title<span style="color: red;"> *</span><br/>
+            <div>
+              <h4>New Title</h4><span style="color: red;"> *</span><br/>
             <input type="text" id="data_2" name="review[title]" class="form-control"/>
             </div>
-            <div>Product Name<span style="color: red;"> *</span><br/>
+            <div><h4>Product Name</h4><span style="color: red;"> *</span><br/>
             <input type="text" id="data_5" name="review[product]" rows="3" class="form-control"/>
             </div>
-            <div>Company Name<span style="color: red;"> *</span><br/>
+            <div><h4>Company Name</h4><span style="color: red;"> *</span><br/>
             <input type="text" id="data_6" name="review[company]" rows="3" class="form-control"/>
             </div>
-            <div>Description<span style="color: red;"> *</span><br/>
+            <div><h4>Description</h4><span style="color: red;"> *</span><br/>
             <textarea id="data_7" name="review[description]" class="form-control"></textarea>
             </div>
-            <div>Rate this product<span style="color: red;"> *</span><br/>
+            <div><h4>Rate this product</h4><span style="color: red;"> *</span><br/>
             <select id="data_4" name="review[rating]" class="form-control"><option>1</option>
             <option>2</option>
             <option>3</option>
@@ -210,10 +235,11 @@
             <option>5</option>
             </select>
             </div>
-            <div>Would you recommend this product?<span style="color: red;"> *</span><br/>
-            <span><input type="radio" id="data_9_0" name="review[recommend]" value="Yes"/> Yes</span><br/>
-            <span><input type="radio" id="data_9_1" name="review[recommend]" value="No"/> No</span><br/>
-            <span><input type="radio" id="data_9_2" name="review[recommend]" value="I am not sure"/> I am not sure</span><br/>
+            <div><h4>Would you recommend this product?</h4><span style="color: red;"> *</span><br/>
+              <select id="data_3" name="review[recommend]" class="form-control"><option>Yes</option>
+              <option>No</option>
+              <option>I'm Not Sure</option>
+            </select>
             </div>
             <button type="submit" class="btn btn-primary btn-lg">Update Your Review</button>
             </form>
@@ -237,9 +263,9 @@
             <!-- <div class="modal-header"> -->
   <div id="myModal2">
         <div class="modal-body">
-          <h3>Create A Review</h3>
-          <form id="create-a-review">
 
+          <form id="create-a-review">
+          <h3>Create A Review</h3>
           <div>Add Review To The Vault</div>
           <div>Title<span style="color: red;"> *</span><br/>
           <input type="text" id="data_2" name="review[title]" class="form-control"/>
@@ -262,9 +288,10 @@
           </select>
           </div>
           <div>Would you recommend this product?<span style="color: red;"> *</span><br/>
-          <span><input type="radio" id="data_9_0" name="review[recommend]" value="Yes"/> Yes</span><br/>
-          <span><input type="radio" id="data_9_1" name="review[recommend]" value="No"/> No</span><br/>
-          <span><input type="radio" id="data_9_2" name="review[recommend]" value="I am not sure"/> I am not sure</span><br/>
+            <select id="data_3" name="review[recommend]" class="form-control"><option>Yes</option>
+            <option>No</option>
+            <option>I'm Not Sure</option>
+          </select>
           </div>
           <button type="submit" class="btn btn-primary btn-lg">Post It!</button>
           </form>
@@ -386,5 +413,46 @@
    <span class="sr-only">Next</span>
  </a>
   </div>
+
+  <!-- Footer -->
+<footer class="end">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Get The Brands</h5>
+
+        <p>
+          Here You Can Get All Our Featured Items!
+        </p>
+      </div>
+
+      <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Brands</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.sephora.com/search?keyword=tatcha" class="text-dark">Get Tatcha!</a>
+          </li>
+          <li>
+            <a href="https://www.sephora.com/search?keyword=nars" class="text-dark">Get Nars!</a>
+          </li>
+          <li>
+            <a href="https://www.sephora.com/search?keyword=huda%20beauty" class="text-dark">Get Huda Beauty!</a>
+          </li>
+          <li>
+            <a href="https://www.sephora.com/brand/fenty-beauty-rihanna" class="text-dark">Get Fenty Beauty!</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+</footer>
+<!-- Footer -->
           </body>
     </html>

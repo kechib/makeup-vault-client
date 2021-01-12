@@ -29,7 +29,10 @@ const onChangePassword = function (event) {
 }
 
 const onSignOut = function (event) {
-  api.signOut()
+  event.preventDefault()
+  const form = event.target
+  const data = getFormFields(form)
+  api.signOut(data)
     .then(ui.onSignOutSuccess)
     .catch(ui.onSignOutFailure)
 }

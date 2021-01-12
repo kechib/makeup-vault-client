@@ -14,8 +14,11 @@ const onSignInSuccess = function (response) {
   $('.background').hide()
   $('#carouselExampleIndicators').show()
     $('#menu').show()
-  // $('.review1').show()
+
 $('.start').hide()
+$('.page-content').show()
+$('.header-content').hide()
+$('.container-fluid').hide()
   $('form').trigger('reset')
   $('#hide-modal').show()
   store.user = response.user
@@ -40,12 +43,11 @@ const onChangePasswordFailure = function (error) {
 }
 
 const onSignOutSuccess = function () {
-  store.user = null
   $('#message').text('Signed out. Goodbye!')
-  $('.step2').hide()
-  $('.review1').hide()
-$('.step3').hide()
-$('.start').show()
+  $('.start').show()
+    $('.background').show()
+    $('#carouselExampleIndicators').hide()
+      $('#menu').hide()
   $('form').trigger('reset')
 }
 

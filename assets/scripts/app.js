@@ -15,6 +15,8 @@ $(() => {
   $('#menu').hide()
   $('.review1').hide()
 $('.start').show()
+$('.header-content').show()
+$('.page-content').hide()
 $('#hide-modal').hide()
 
   $('#sign-up').on('submit', userEvents.onSignUp)
@@ -59,5 +61,8 @@ $('#hide-modal').hide()
     jQuery.noConflict()
     $('#modalWindow').modal('hide')
   })
-
+$('#carouselExampleControls').on('click', function() {
+  $('carousel').carousel('prev')
+  $('carousel').carousel('next')
+})
 })
