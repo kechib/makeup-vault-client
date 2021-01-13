@@ -18,7 +18,10 @@ $(() => {
 $('.start').show()
 $('.header-content').show()
 $('.page-content').hide()
-$('#hide-modal').hide()
+$('#modalWindow1').hide()
+$('#modalWindow2').hide()
+
+
 
   $('#sign-up').on('submit', userEvents.onSignUp)
   $('#sign-in').on('submit', userEvents.onSignIn)
@@ -66,4 +69,9 @@ $('#carouselExampleControls').on('click', function() {
   $('carousel').carousel('prev')
   $('carousel').carousel('next')
 })
+$("marquee").hover(function () {
+    this.stop();
+}, function () {
+    this.start();
+});
 })

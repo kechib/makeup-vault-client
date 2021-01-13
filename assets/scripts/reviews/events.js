@@ -9,7 +9,7 @@ console.log(event)
 
   event.preventDefault()
   const data = getFormFields(createReview)
-  console.log('data is ', data)
+  // console.log('data is ', data)
   api.createReview(data)
   .then(ui.onCreateReviewSuccess)
   .catch(ui.onCreateReviewFailure)

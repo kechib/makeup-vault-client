@@ -11,11 +11,18 @@ This is my first full stack single page application. This project was a bit of a
 - As a user I should be able to update and delete my reviews
 
 
+## IMPORTANT LINKS
+LINK TO APPLICATION ----> https://kechib.github.io/full-stack-front-end-project/
+LINK TO BACK-END REPO ----> https://github.com/kechib/full-stack-back-end-project
+
 ## Technologies Used
 - Javascript
 - HTML/CSS
 - JQuery
 - Bootstrap
+- AJAX
+
+
 
 ## Unsolved Problems
 I want the User to be able to see other user's Reviews

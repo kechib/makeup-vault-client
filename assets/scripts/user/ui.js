@@ -22,7 +22,7 @@ $('.end').hide()
 $('.container-fluid').hide()
 $('.end').show()
   $('form').trigger('reset')
-  $('#hide-modal').show()
+  
   store.user = response.user
   $('#message').text('Sign In Successful! Hello '+ response.user.email + ' ! Here is your owner id! '+ response.user.token)
 
