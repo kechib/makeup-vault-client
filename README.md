@@ -1,7 +1,8 @@
 # full-stack-front-end-project
 
 ## Planning Story
-This is my first full stack single page application. This project was a bit of a challenge for me. I struggled with how creative I wanted to be, and managing the whole application at the same time. At times I found myself lost in different sections of the app. I learned organization is key. Sticking to a plan can ease stress and make your work more clean and debugging easier. I also really struggled with my css. I definely will use what I've learned with styling to hopefullly create better projects in the future.
+This is my first full stack single page application. I wanted to make an application the helps the user make makeup reviews. The user can review a product. Update and Delete their reviews. See all of their reviews and find a single review. 
+  This project was a bit of a challenge for me. I struggled with how creative I wanted to be, and managing the whole application at the same time. At times I found myself lost in different sections of the app. I learned organization is key. Sticking to a plan can ease stress and make your work more clean and debugging easier. I also really struggled with my css. I definely will use what I've learned with styling to hopefullly create better projects in the future.
 
 
 ## User Stories
