@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>The Makeup Review</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <header id="menu">
+  <label for="menu">
+  <i  class="handlebars"></i>
+</label>
+<div class="pos-f-t">
+  <ul>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="navbar navbar-light" style="background-color: linear-gradient(132deg, #FC415A, #53e3a6);">
+      <h4 class="text-white">Manage Your Account</h4>
+
+  <li>
+      <form id="change-password">
+        <h3>Change Your Password</h3>
+        <input class="form-control"
+    placeholder="old password"
+    name="passwords[old]"
+    type="password"/>
+    <input class="form-control"
+    placeholder="new password"
+    name="passwords[new]"
+    type="password"/>
+    <button type="submit" class="btn btn-primary btn-lg">New Password</button>
+  </form>
+    </li>
+    <li>
+      <form id="delete-review">
+        <h3>Delete Your Review</h3>
+        <input class="form-control"
+        type="text"
+        name="review[_id]"
+        placeholder="Put ID Here To Delete Review"
+        />
+    <button type="submit" class="btn btn-primary btn-lg">Delete Your Review</button>
+    </form>
+    </li>   <br>
+
+    <li>
+      <form id="get-one-review">
+        <h3>Get A Review</h3>
+      <input class="form-control"
+      type="text"
+      name="review[_id]"
+      placeholder="ID Get One Review"
+      />
+      <button type="submit" class="btn btn-primary btn-lg">Open Vault[One]</button>
+  </form>
+
+    </li>
+  </ul>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light" style="background-color: linear-gradient(132deg, #FC415A, #53e3a6);">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul>
+
+  <li>
+    <form id="get-reviews">
+  <button type="submit" class="btn btn-primary btn-lg">Open the Vault</button>
+  </form>
+</li>
+<li>
+<form id="sign-out">
+<button  class="btn btn-primary btn-lg">Sign Out</button>
+</form>
+</li>
+</ul>
+</nav>
+</div>
+
+</header>
+<div class="container-fluid">
+<!-- Background animtion-->
+    <div class="cubeDesign">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+<!-- header <header>-->
+</div>
+
+
+<marquee behavior="scroll" direction="right"><p id="message"></p></marquee>
+<marquee behavior="scroll" direction="right"><p id="review-display"></p></marquee>
+      <!-- <div class="container"> -->
+      <!-- title & content -->
+            <section>
+              <div class="header-content">
+               <h1>Welcome To The Makeup Vault</h1>
+               <p>Come unlock your makeup reviews! It'll be our secret</p>
+            </div>
+            <div class="page-content">
+              <h1>Give Us Your Reviews Here At The Makeup Vault</h1>
+             <p> Write reviews for your favorite makeup brands,<br> What do you have to say? We'd love to hear it! <br>
+               Reviewing high quality products helps the beauty community all around you.</p>
+            </div>
+            </section>
+      <div class="background">
+     <div class="wrapper">
+      <h1>The Makeup Vault</h1>
+
+      <div class="start">
+            <form id="sign-up" class="form">
+              <h3>Sign Up</h3>
+              <input class="form-control"
+              placeholder="Email"
+              name="credentials[email]"
+              type="text">
+              <input class="form-control"
+              placeholder="password"
+              name="credentials[password]"
+              type="password">
+              <input class="form-control"
+              placeholder="confirm password"
+              name="credentials[password_confirmation]"
+              type="password"  />
+               <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            </form>
+
+            <form id="sign-in" class="form">
+              <h3>Sign In</h3>
+              <input class="form-control"
+              placeholder="Email"
+              name="credentials[email]"
+              type="text" />
+              <input class="form-control"
+          placeholder="password"
+          name="credentials[password]"
+          type="password" />
+        <button type="submit" class="btn btn-primary btn-lg">Sign In</button>
+        </form>
+        </div>
+      </div>
+
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+<!-- </div> -->
+      <!-- <div class="step2">
+            <form id="change-password">
+              <input class="form-control"
+          placeholder="old password"
+          name="passwords[old]"
+          type="password"/>
+          <input class="form-control"
+          placeholder="new password"
+          name="passwords[new]"
+          type="password"/>
+          <button type="submit" class="btn btn-primary btn-lg">New Password</button>
+        </form>
+        </div>
+
+
+        <div class="step3">
+
+          <form id="sign-out">
+          <button  class="btn btn-primary btn-lg">Sign Out</button>
+          </form>
+      </div> -->
+
+      <!-- Trigger the modal with a button -->
+
+      <!-- Modal content-->
+      <div class="modal" id="modalWindow1" role="dialog">
+          <div class="modal-content">
+            <!-- <div class="modal-header"> -->
+  <div id="myModal1">
+        <div class="modal-body">
+          <form id="update-review">
+            <h3>Edit Your Review</h3>
+            <input class="form-control"
+            type="text"
+            name="review[_id]"
+            placeholder="Put ID Here To Edit Review"
+            />
+            <div>
+              <h4>New Title</h4><span style="color: red;"> *</span><br/>
+            <input type="text" id="data_2" name="review[title]" class="form-control"/>
+            </div>
+            <div><h4>Product Name</h4><span style="color: red;"> *</span><br/>
+            <input type="text" id="data_5" name="review[product]" rows="3" class="form-control"/>
+            </div>
+            <div><h4>Company Name</h4><span style="color: red;"> *</span><br/>
+            <input type="text" id="data_6" name="review[company]" rows="3" class="form-control"/>
+            </div>
+            <div><h4>Description</h4><span style="color: red;"> *</span><br/>
+            <textarea id="data_7" name="review[description]" class="form-control"></textarea>
+            </div>
+            <div><h4>Rate this product</h4><span style="color: red;"> *</span><br/>
+            <select id="data_4" name="review[rating]" class="form-control"><option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+            </div>
+            <div><h4>Would you recommend this product?</h4><span style="color: red;"> *</span><br/>
+              <select id="data_3" name="review[recommend]" class="form-control"><option>Yes</option>
+              <option>No</option>
+              <option>I'm Not Sure</option>
+            </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Update Your Review</button>
+            </form>
+
+
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-default closebtn" data-dismiss="modal">Close</button>
+        </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Trigger the modal with a button -->
+
+      <!-- Modal content-->
+      <div class="modal" id="modalWindow2" role="dialog">
+          <div class="modal-content">
+            <!-- <div class="modal-header"> -->
+  <div id="myModal2">
+        <div class="modal-body">
+
+          <form id="create-a-review">
+          <h3>Create A Review</h3>
+          <div>Add Review To The Vault</div>
+          <div>Title<span style="color: red;"> *</span><br/>
+          <input type="text" id="data_2" name="review[title]" class="form-control"/>
+          </div>
+          <div>Product Name<span style="color: red;"> *</span><br/>
+          <input type="text" id="data_5" name="review[product]" rows="3" class="form-control"/>
+          </div>
+          <div>Company Name<span style="color: red;"> *</span><br/>
+          <input type="text" id="data_6" name="review[company]" rows="3" class="form-control"/>
+          </div>
+          <div>Description<span style="color: red;"> *</span><br/>
+          <textarea id="data_7" name="review[description]" class="form-control"></textarea>
+          </div>
+          <div>Rate this product<span style="color: red;"> *</span><br/>
+          <select id="data_4" name="review[rating]" class="form-control"><option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          </select>
+          </div>
+          <div>Would you recommend this product?<span style="color: red;"> *</span><br/>
+            <select id="data_3" name="review[recommend]" class="form-control"><option>Yes</option>
+            <option>No</option>
+            <option>I'm Not Sure</option>
+          </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Post It!</button>
+          </form>
+          </div>
+
+
+
+          <div class="modal-footer">
+          <button type="button" class="btn btn-default closebtn" data-dismiss="modal">Close</button>
+        </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- <form id="update-review">
+          <input class="form-control"
+          type="text"
+          name="review[_id]"
+          placeholder="Put ID Here To Edit Review"
+          />
+          <div>New Title<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_2" name="review[title]" class="form-control"/>
+    </div>
+    <div>Product Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_5" name="review[product]" rows="3" class="form-control"/>
+    </div>
+    <div>Company Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_6" name="review[company]" rows="3" class="form-control"/>
+    </div>
+    <div>Description<span style="color: red;"> *</span><br/>
+    <textarea id="data_7" name="review[description]" class="form-control"></textarea>
+    </div>
+    <div>Rate this product<span style="color: red;"> *</span><br/>
+    <select id="data_4" name="review[rating]" class="form-control"><option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    </select>
+    </div>
+    <div>Would you recommend this product?<span style="color: red;"> *</span><br/>
+    <span><input type="radio" id="data_9_0" name="review[recommend]" value="Yes"/> Yes</span><br/>
+    <span><input type="radio" id="data_9_1" name="review[recommend]" value="No"/> No</span><br/>
+    <span><input type="radio" id="data_9_2" name="review[recommend]" value="I am not sure"/> I am not sure</span><br/>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Post It!</button>
+    </form>
+    </div>
+
+  <!--<form id="update-review">
+    <input class="form-control"
+    type="text"
+    name="review[_id]"
+    placeholder="Put ID Here To Edit Review"
+    />
+    <div>New Title<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_2" name="review[title]" class="form-control"/>
+    </div>
+    <div>Product Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_5" name="review[product]" rows="3" class="form-control"/>
+    </div>
+    <div>Company Name<span style="color: red;"> *</span><br/>
+    <input type="text" id="data_6" name="review[company]" rows="3" class="form-control"/>
+    </div>
+    <div>Description<span style="color: red;"> *</span><br/>
+    <textarea id="data_7" name="review[description]" class="form-control"></textarea>
+    </div>
+    <div>Rate this product<span style="color: red;"> *</span><br/>
+    <select id="data_4" name="review[rating]" class="form-control"><option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    </select>
+    </div>
+    <div>Would you recommend this product?<span style="color: red;"> *</span><br/>
+    <span><input type="radio" id="data_9_0" name="review[recommend]" value="Yes"/> Yes</span><br/>
+    <span><input type="radio" id="data_9_1" name="review[recommend]" value="No"/> No</span><br/>
+    <span><input type="radio" id="data_9_2" name="review[recommend]" value="I am not sure"/> I am not sure</span><br/>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Update Your Review</button>
+  </form> -->
+  <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="First slide" class="d-block w-100" src="https://i.pinimg.com/736x/1c/cd/be/1ccdbe19c57753c9ac19a00eaae26664.jpg">
+				<div class="carousel-caption d-none d-md-block">
+          <h5>Featured Brands!</h5>
+					<p>Tarte,Tatcha, ABH, NARS and more!</p>
+        </div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Second slide" class="d-block w-100" src="https://i0.wp.com/www.society19.com/wp-content/uploads/2019/11/f3369cb8451a210974b6688053e461d4.jpg?fit=1024%2C768&ssl=1">
+				<div class="carousel-caption d-none d-md-block">
+          <h5>Add To The Vault!</h5>
+					<p>Review Your Favorite Makeup Brands Here, Love It Or Hate It</p>
+            <button type="button" class="btn btn-info btn-lg" id="open-modal2" data-toggle="modal" data-target="#myModal2">Create A Review</button>
+
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="https://i.pinimg.com/564x/32/a7/b2/32a7b20e4ed0ca24605f8d814f6780a2.jpg">
+				<div class="carousel-caption d-none d-md-block">
+          <h5>Don't Like it? Fix It!</h5>
+					<p>Already Made A Review? You Can Edit It Here!</p>
+        <button type="button" class="btn btn-info btn-lg" id="open-modal1" data-toggle="modal" data-target="#myModal1">Edit Your Review</button>
+				</div>
+			</div>
+		</div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   <span class="sr-only">Previous</span>
+ </a>
+ <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   <span class="sr-only">Next</span>
+ </a>
+  </div>
+
+  <!-- Footer -->
+<footer class="end">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Get The Brands</h5>
+
+        <p>
+          Here You Can Get All Our Featured Items!
+        </p>
+      </div>
+
+      <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Brands</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.sephora.com/search?keyword=tatcha" class="text-dark">Get Tatcha!</a>
+          </li>
+          <li>
+            <a href="https://www.sephora.com/search?keyword=nars" class="text-dark">Get Nars!</a>
+          </li>
+          <li>
+            <a href="https://www.sephora.com/search?keyword=huda%20beauty" class="text-dark">Get Huda Beauty!</a>
+          </li>
+          <li>
+            <a href="https://www.sephora.com/brand/fenty-beauty-rihanna" class="text-dark">Get Fenty Beauty!</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+</footer>
+<!-- Footer -->
+          </body>
+    </html>
