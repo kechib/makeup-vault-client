@@ -1,9 +1,21 @@
-# full-stack-front-end-project
+The Makeup Vault Application (Front-End Project)
 
-## Planning Story
-This is my first full stack single page application. I wanted to make an application the helps the user make makeup reviews. The user can review a product. Update and Delete their reviews. See all of their reviews and find a single review. 
+This is my first full stack single page application. I wanted to make an application the helps the user make makeup reviews. The user can review a product. Update and Delete their reviews. See all of their reviews and find a single review.
   This project was a bit of a challenge for me. I struggled with how creative I wanted to be, and managing the whole application at the same time. At times I found myself lost in different sections of the app. I learned organization is key. Sticking to a plan can ease stress and make your work more clean and debugging easier. I also really struggled with my css. I definely will use what I've learned with styling to hopefullly create better projects in the future.
 
+## Planning Story
+- Rerun curl-scripts in back-END
+- Set up server, create files, go over requirements
+- start authentication scripts
+- Update HTML
+- test in browser
+- debugging
+- start review scripts
+- Update HTML
+- test in browser
+- debugging
+- start scss (research, watch video)
+- Update HTML with research
 
 ## User Stories
 - As a user I want to create a  profile where you can sign-up, sign-in or change passwords
@@ -36,7 +48,8 @@ I want to add a forum to the app
 
 
 
-## Images
+## Credits
+Login Background ---> https://www.sliderrevolution.com/examples/
 
 
 #### Wireframe:
